@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4E86C1832DB976CB0007A4A9 /* Database in Resources */ = {isa = PBXBuildFile; fileRef = 4E86C1822DB976CB0007A4A9 /* Database */; };
+		4E86C1862DB976DE0007A4A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E86C1852DB976DE0007A4A9 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4E86C16E2DB976710007A4A9 /* GRDBCustomExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRDBCustomExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E86C1822DB976CB0007A4A9 /* Database */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Database; sourceTree = "<group>"; };
+		4E86C1852DB976DE0007A4A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +39,9 @@
 		4E86C1652DB976710007A4A9 = {
 			isa = PBXGroup;
 			children = (
+				4E86C1822DB976CB0007A4A9 /* Database */,
 				4E86C1702DB976710007A4A9 /* GRDBCustomExample */,
+				4E86C1852DB976DE0007A4A9 /* README.md */,
 				4E86C16F2DB976710007A4A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +118,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E86C1862DB976DE0007A4A9 /* README.md in Resources */,
+				4E86C1832DB976CB0007A4A9 /* Database in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
