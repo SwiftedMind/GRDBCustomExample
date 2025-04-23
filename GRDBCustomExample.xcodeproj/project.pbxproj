@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E86C1832DB976CB0007A4A9 /* Database in Resources */ = {isa = PBXBuildFile; fileRef = 4E86C1822DB976CB0007A4A9 /* Database */; };
 		4E86C1862DB976DE0007A4A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4E86C1852DB976DE0007A4A9 /* README.md */; };
+		4EDA29822DB97ACC00F67424 /* Database in Frameworks */ = {isa = PBXBuildFile; productRef = 4EDA29812DB97ACC00F67424 /* Database */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDA29822DB97ACC00F67424 /* Database in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +44,7 @@
 				4E86C1822DB976CB0007A4A9 /* Database */,
 				4E86C1702DB976710007A4A9 /* GRDBCustomExample */,
 				4E86C1852DB976DE0007A4A9 /* README.md */,
+				4EDA29802DB97ACC00F67424 /* Frameworks */,
 				4E86C16F2DB976710007A4A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +55,13 @@
 				4E86C16E2DB976710007A4A9 /* GRDBCustomExample.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4EDA29802DB97ACC00F67424 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +84,7 @@
 			);
 			name = GRDBCustomExample;
 			packageProductDependencies = (
+				4EDA29812DB97ACC00F67424 /* Database */,
 			);
 			productName = GRDBCustomExample;
 			productReference = 4E86C16E2DB976710007A4A9 /* GRDBCustomExample.app */;
@@ -335,6 +346,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4EDA29812DB97ACC00F67424 /* Database */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Database;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4E86C1662DB976710007A4A9 /* Project object */;
 }
