@@ -16,6 +16,10 @@
 		4E86C16E2DB976710007A4A9 /* GRDBCustomExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRDBCustomExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E86C1822DB976CB0007A4A9 /* Database */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Database; sourceTree = "<group>"; };
 		4E86C1852DB976DE0007A4A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4EDA29C62DBA6B7900F67424 /* build_GRDB_binary.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_GRDB_binary.sh; sourceTree = "<group>"; };
+		4EDA29C72DBA6B8000F67424 /* GRDBCustomSQLite-USER.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GRDBCustomSQLite-USER.h"; sourceTree = "<group>"; };
+		4EDA29C82DBA6B8000F67424 /* GRDBCustomSQLite-USER.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "GRDBCustomSQLite-USER.xcconfig"; sourceTree = "<group>"; };
+		4EDA29C92DBA6B8000F67424 /* SQLiteLib-USER.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "SQLiteLib-USER.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -41,6 +45,8 @@
 		4E86C1652DB976710007A4A9 = {
 			isa = PBXGroup;
 			children = (
+				4EDA29C62DBA6B7900F67424 /* build_GRDB_binary.sh */,
+				4EDA29CA2DBA6B8000F67424 /* GRDBCustomSQLite */,
 				4E86C1822DB976CB0007A4A9 /* Database */,
 				4E86C1702DB976710007A4A9 /* GRDBCustomExample */,
 				4E86C1852DB976DE0007A4A9 /* README.md */,
@@ -62,6 +68,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EDA29CA2DBA6B8000F67424 /* GRDBCustomSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA29C72DBA6B8000F67424 /* GRDBCustomSQLite-USER.h */,
+				4EDA29C82DBA6B8000F67424 /* GRDBCustomSQLite-USER.xcconfig */,
+				4EDA29C92DBA6B8000F67424 /* SQLiteLib-USER.xcconfig */,
+			);
+			path = GRDBCustomSQLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

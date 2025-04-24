@@ -7,6 +7,7 @@ extension AppDatabase {
 
   private static func makeShared() -> AppDatabase {
     do {
+      core_vec_init()
       let fileManager = FileManager.default
       let appSupportURL = try fileManager.url(
         for: .applicationSupportDirectory, in: .userDomainMask,
@@ -14,6 +15,7 @@ extension AppDatabase {
       )
       let directoryURL = appSupportURL.appendingPathComponent("Database", isDirectory: true)
 
+      
       // Create the database folder if needed
       try fileManager.createDirectory(at: directoryURL, withIntermediateDirectories: true)
 
@@ -25,6 +27,7 @@ extension AppDatabase {
         configuration: AppDatabase.makeConfiguration()
       )
 
+      print(databaseURL.absoluteString)
       // Create the AppDatabase
       let appDatabase = try AppDatabase(dbPool)
 

@@ -23,7 +23,11 @@ extension AppDatabase {
 
   public static func makeConfiguration(_ base: Configuration = Configuration()) -> Configuration {
     var config = base
-
+    
+    config.prepareDatabase { db in
+      db.trace { print($0) }
+    }
+    
     if ProcessInfo.processInfo.environment["SQL_TRACE"] != nil {
       config.prepareDatabase { db in
         db.trace {
@@ -59,6 +63,14 @@ extension AppDatabase {
         t.column("title")
         t.column("body")
       }
+
+      try db.execute(
+        sql: """
+          create virtual table vec_examples using vec0(
+          sample_embedding float[8]
+          );
+          """
+      )
     }
 
     return migrator
