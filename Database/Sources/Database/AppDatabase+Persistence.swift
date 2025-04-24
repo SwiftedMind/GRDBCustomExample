@@ -27,7 +27,6 @@ extension AppDatabase {
         configuration: AppDatabase.makeConfiguration()
       )
 
-      print(databaseURL.absoluteString)
       // Create the AppDatabase
       let appDatabase = try AppDatabase(dbPool)
 

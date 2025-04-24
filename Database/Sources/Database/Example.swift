@@ -6,15 +6,15 @@ import GRDB
 public func performExample() async throws {
   let database = AppDatabase.shared
 
-//  let book = try await database.dbWriter.write { db in
-//    try Book(author: "Author", title: "Moby-Dick", body: "Body").inserted(db)
-//  }
-//
-//  let pattern = FTS5Pattern(matchingPhrase: "Moby-Dick")
-//
-//  let books = try await database.reader.read { db in
-//    try Book.matching(pattern).fetchAll(db)
-//  }
+  //  let book = try await database.dbWriter.write { db in
+  //    try Book(author: "Author", title: "Moby-Dick", body: "Body").inserted(db)
+  //  }
+  //
+  //  let pattern = FTS5Pattern(matchingPhrase: "Moby-Dick")
+  //
+  //  let books = try await database.reader.read { db in
+  //    try Book.matching(pattern).fetchAll(db)
+  //  }
 
   try await database.dbWriter.write { db in
 //    try db.execute(
@@ -27,16 +27,19 @@ public func performExample() async throws {
 //        (4, '[-0.710, 0.330, 0.656, 0.041, -0.990, 0.726, 0.385, -0.958]');
 //        """
 //    )
-    
-    let result = try Row.fetchAll(db, sql: """
-      select rowid, distance from vec_examples
-        where sample_embedding match '[0.890, 0.544, 0.825, 0.961, 0.358, 0.0196, 0.521, 0.175]'
-        order by distance
-        limit 2;
-      """)
-    
-    print(result)
+//
+//    let result = try Row.fetchAll(
+//      db,
+//      sql: """
+//        select rowid, distance from vec_examples
+//          where sample_embedding match '[0.890, 0.544, 0.825, 0.961, 0.358, 0.0196, 0.521, 0.175]'
+//          order by distance
+//          limit 2;
+//        """
+//    )
+//
+//    print(result)
   }
 
-//  print(books)
+  //  print(books)
 }

@@ -7,3 +7,4 @@
 int core_vec_init(void) {
   return sqlite3_auto_extension((void *)sqlite3_vec_init);
 }
+

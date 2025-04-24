@@ -22,10 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4EDA29CD2DBA6C2F00F67424 /* sqlite-vec.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA29CC2DBA6C2F00F67424 /* sqlite-vec.c */; };
-		4EDA29CE2DBA6C2F00F67424 /* sqlite-vec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDA29CB2DBA6C2F00F67424 /* sqlite-vec.h */; };
-		4EDA29D12DBA6C7500F67424 /* extinit.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA29D02DBA6C7500F67424 /* extinit.c */; };
-		4EDA29D22DBA6C7500F67424 /* extinit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDA29CF2DBA6C7500F67424 /* extinit.h */; };
 		EE751A3F1D9D774E00A88200 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = EE751A3E1D9D774E00A88200 /* sqlite3.c */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4EDA29CB2DBA6C2F00F67424 /* sqlite-vec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sqlite-vec.h"; sourceTree = "<group>"; };
-		4EDA29CC2DBA6C2F00F67424 /* sqlite-vec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "sqlite-vec.c"; sourceTree = "<group>"; };
-		4EDA29CF2DBA6C7500F67424 /* extinit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extinit.h; sourceTree = "<group>"; };
-		4EDA29D02DBA6C7500F67424 /* extinit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = extinit.c; sourceTree = "<group>"; };
 		B538715222566E13004BFBB9 /* copyExampleConfiguration.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = copyExampleConfiguration.sh; path = scripts/copyExampleConfiguration.sh; sourceTree = "<group>"; };
 		B538715322566F25004BFBB9 /* buildAmalgamation.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = buildAmalgamation.sh; path = scripts/buildAmalgamation.sh; sourceTree = "<group>"; };
 		D2AAC046055464E500DB518D /* libsqlitecustom.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsqlitecustom.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,10 +75,6 @@
 			children = (
 				EE751A3E1D9D774E00A88200 /* sqlite3.c */,
 				F32EB7781CFBC91D007C7948 /* sqlite3.h */,
-				4EDA29CF2DBA6C7500F67424 /* extinit.h */,
-				4EDA29D02DBA6C7500F67424 /* extinit.c */,
-				4EDA29CB2DBA6C2F00F67424 /* sqlite-vec.h */,
-				4EDA29CC2DBA6C2F00F67424 /* sqlite-vec.c */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -113,8 +101,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EDA29D22DBA6C7500F67424 /* extinit.h in Headers */,
-				4EDA29CE2DBA6C2F00F67424 /* sqlite-vec.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,8 +203,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EDA29CD2DBA6C2F00F67424 /* sqlite-vec.c in Sources */,
-				4EDA29D12DBA6C7500F67424 /* extinit.c in Sources */,
 				EE751A3F1D9D774E00A88200 /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		4E13D2F82769BC230037588C /* DatabaseBackupProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E13D2F72769BC230037588C /* DatabaseBackupProgress.swift */; };
 		4ECF777E273AFBAB001685F5 /* BackupTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF777A273AFB72001685F5 /* BackupTestCase.swift */; };
-		4EDA29D72DBA82FF00F67424 /* extinit.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA29D62DBA82FF00F67424 /* extinit.c */; };
-		4EDA29D82DBA8CE800F67424 /* extinit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDA29D42DBA7BF800F67424 /* extinit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EDA29E22DBA974700F67424 /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDA29E12DBA974700F67424 /* sqlite3ext.h */; };
+		4EDA29E72DBA992C00F67424 /* sqlite-vec.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDA29E52DBA992C00F67424 /* sqlite-vec.h */; };
+		4EDA29E82DBA992C00F67424 /* extinit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDA29E32DBA992C00F67424 /* extinit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EDA29E92DBA992C00F67424 /* extinit.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA29E42DBA992C00F67424 /* extinit.c */; };
+		4EDA29EA2DBA992C00F67424 /* sqlite-vec.c in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA29E62DBA992C00F67424 /* sqlite-vec.c */; };
 		56012B6A2573FAE700B4925B /* CommonTableExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56012B682573FAE600B4925B /* CommonTableExpressionTests.swift */; };
 		56012B82257404A400B4925B /* CommonTableExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56012B80257404A300B4925B /* CommonTableExpression.swift */; };
 		560233CF2724339A00529DF3 /* SharedValueObservationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560233CC2724339A00529DF3 /* SharedValueObservationTests.swift */; };
@@ -455,8 +458,11 @@
 /* Begin PBXFileReference section */
 		4E13D2F72769BC230037588C /* DatabaseBackupProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseBackupProgress.swift; sourceTree = "<group>"; };
 		4ECF777A273AFB72001685F5 /* BackupTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackupTestCase.swift; sourceTree = "<group>"; };
-		4EDA29D42DBA7BF800F67424 /* extinit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = extinit.h; path = SQLiteCustom/src/extinit.h; sourceTree = "<group>"; };
-		4EDA29D62DBA82FF00F67424 /* extinit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = extinit.c; path = SQLiteCustom/src/extinit.c; sourceTree = "<group>"; };
+		4EDA29E12DBA974700F67424 /* sqlite3ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = sqlite3ext.h; path = SQLiteCustom/src/sqlite/src/sqlite3ext.h; sourceTree = "<group>"; };
+		4EDA29E32DBA992C00F67424 /* extinit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = extinit.h; path = SQLiteCustom/extinit.h; sourceTree = "<group>"; };
+		4EDA29E42DBA992C00F67424 /* extinit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = extinit.c; path = SQLiteCustom/extinit.c; sourceTree = "<group>"; };
+		4EDA29E52DBA992C00F67424 /* sqlite-vec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "sqlite-vec.h"; path = "SQLiteCustom/sqlite-vec.h"; sourceTree = "<group>"; };
+		4EDA29E62DBA992C00F67424 /* sqlite-vec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "sqlite-vec.c"; path = "SQLiteCustom/sqlite-vec.c"; sourceTree = "<group>"; };
 		56012B682573FAE600B4925B /* CommonTableExpressionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTableExpressionTests.swift; sourceTree = "<group>"; };
 		56012B80257404A300B4925B /* CommonTableExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableExpression.swift; sourceTree = "<group>"; };
 		560233CC2724339A00529DF3 /* SharedValueObservationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedValueObservationTests.swift; sourceTree = "<group>"; };
@@ -1797,8 +1803,11 @@
 				56781B06243F7B4B00650A83 /* GRDB-Bridging.h */,
 				F3BA7FF11CFB23D3003DC1BA /* GRDB.h */,
 				F3BA7FF01CFB23C9003DC1BA /* sqlite3.h */,
-				4EDA29D42DBA7BF800F67424 /* extinit.h */,
-				4EDA29D62DBA82FF00F67424 /* extinit.c */,
+				4EDA29E12DBA974700F67424 /* sqlite3ext.h */,
+				4EDA29E32DBA992C00F67424 /* extinit.h */,
+				4EDA29E42DBA992C00F67424 /* extinit.c */,
+				4EDA29E52DBA992C00F67424 /* sqlite-vec.h */,
+				4EDA29E62DBA992C00F67424 /* sqlite-vec.c */,
 				F3BA7FEF1CFB23BF003DC1BA /* module.modulemap */,
 				F3BA7FEE1CFB23B7003DC1BA /* GRDB.xcconfig */,
 				F3BA813B1CFB3770003DC1BA /* GRDBCustomSQLite-Testing.xcconfig */,
@@ -1824,10 +1833,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDA29E22DBA974700F67424 /* sqlite3ext.h in Headers */,
 				F3BA80931CFB2F13003DC1BA /* GRDB.h in Headers */,
+				4EDA29E72DBA992C00F67424 /* sqlite-vec.h in Headers */,
+				4EDA29E82DBA992C00F67424 /* extinit.h in Headers */,
 				56C9EB9B2495324700FE5D55 /* grdb_config.h in Headers */,
 				56781B08243F7B5300650A83 /* GRDB-Bridging.h in Headers */,
-				4EDA29D82DBA8CE800F67424 /* extinit.h in Headers */,
 				F3BA80951CFB2F18003DC1BA /* sqlite3.h in Headers */,
 				EED476F21CFD17270026A4EC /* GRDBCustomSQLite-USER.h in Headers */,
 			);
@@ -2056,6 +2067,8 @@
 				569BBA4D229170B300478429 /* Inflections+English.swift in Sources */,
 				56D110F528AFC90800E64463 /* MutablePersistableRecord+Save.swift in Sources */,
 				56D110EF28AFC90800E64463 /* PersistableRecord+Save.swift in Sources */,
+				4EDA29E92DBA992C00F67424 /* extinit.c in Sources */,
+				4EDA29EA2DBA992C00F67424 /* sqlite-vec.c in Sources */,
 				56A6EB2426076F6A00C27594 /* SQL.swift in Sources */,
 				5656A8752295BD56001FF3FF /* RequestProtocols.swift in Sources */,
 				568ECB3525D91CEF00B71526 /* SQLSubquery.swift in Sources */,
@@ -2150,7 +2163,6 @@
 				567B5BF82AD3285100629622 /* QuoteDumpFormat.swift in Sources */,
 				56F89E082A57EBA7002FE2AA /* Database+SchemaDefinition.swift in Sources */,
 				F3BA80831CFB2E67003DC1BA /* DatabaseValueConvertible+RawRepresentable.swift in Sources */,
-				4EDA29D72DBA82FF00F67424 /* extinit.c in Sources */,
 				5657AABB1D107001006283EF /* NSData.swift in Sources */,
 				56D3332329C38D7B00430680 /* WALSnapshotTransaction.swift in Sources */,
 				567B5BF62AD3285100629622 /* DatabaseReader+dump.swift in Sources */,

@@ -64,13 +64,13 @@ extension AppDatabase {
         t.column("body")
       }
 
-      try db.execute(
-        sql: """
-          create virtual table vec_examples using vec0(
-          sample_embedding float[8]
-          );
-          """
-      )
+try db.execute(
+  sql: """
+    create virtual table vec_examples using vec0(
+    sample_embedding float[8]
+    );
+    """
+)
     }
 
     return migrator
